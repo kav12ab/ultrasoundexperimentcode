@@ -34,10 +34,13 @@ Full source code is available at [ultrasoundexperimentcode on GitHub](https://gi
 
 Connect the ultrasonic sensor to the ESP32 as follows:
 
--   `TRIG` → ESP32 digital pin 4
--   `ECHO` → ESP32 digital pin 5
--   `VCC` → 5V (or 3.3V if your sensor supports it)
--   `GND` → GND
+| Sensor Pin | ESP32 Pin | Description     |
+|------------|-----------|-----------------|
+| TRIG       | 4         | Sensor power    |
+| ECHO       | 5         | Ground          |
+| VCC        | 5V        | I2C data line   |
+| GND        | GND       | I2C clock line  |
+
 
 *Note: You can adjust the `TRIG` and `ECHO` pin assignments within the `ultrasound.ino` sketch if needed.*
 
